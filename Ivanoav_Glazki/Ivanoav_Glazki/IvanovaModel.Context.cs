@@ -5,23 +5,26 @@ namespace Ivanoav_Glazki
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class GlazkiEntities : DbContext
-
+    public partial class GlazkiEntities1 : DbContext
     {
-        public GlazkiEntities()
-             : base("name=GlazkiEntities")
+        public GlazkiEntities1()
+            : base("name=GlazkiEntities1")
         {
         }
-      private static GlazkiEntities _context;
-        public static GlazkiEntities GetContext()
+        
+        private static GlazkiEntities1 _context;
+        public static GlazkiEntities1 GetContext()
         {
             if (_context == null)
-                _context = new GlazkiEntities();
+                _context = new GlazkiEntities1();
             return _context;
         }
 
-
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
+    
         public virtual DbSet<Agent> Agent { get; set; }
         public virtual DbSet<AgentPriorityHistory> AgentPriorityHistory { get; set; }
         public virtual DbSet<AgentType> AgentType { get; set; }

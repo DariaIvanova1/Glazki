@@ -65,6 +65,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddEditPage.xaml.cs">
+      <DependentUpon>AddEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddSalePage.xaml.cs">
+      <DependentUpon>AddSalePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Agent.cs">
       <DependentUpon>IvanovaModel.tt</DependentUpon>
     </Compile>
@@ -119,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="PRWindow.xaml.cs">
+      <DependentUpon>PRWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SalePage.xaml.cs">
+      <DependentUpon>SalePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ServicePage.xaml.cs">
       <DependentUpon>ServicePage.xaml</DependentUpon>
     </Compile>
@@ -128,6 +140,14 @@
     <Compile Include="Supplier.cs">
       <DependentUpon>IvanovaModel.tt</DependentUpon>
     </Compile>
+    <Page Include="AddEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddSalePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -141,6 +161,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PRWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SalePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -322,19 +350,21 @@
     <Resource Include="agents\agent_97.png" />
     <Resource Include="agents\agent_98.png" />
     <Resource Include="agents\agent_99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="IvanovaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>IvanovaModel.Context.cs</LastGenOutput>
       <DependentUpon>IvanovaModel.edmx</DependentUpon>
+      <LastGenOutput>IvanovaModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="IvanovaModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>IvanovaModel.edmx</DependentUpon>
       <LastGenOutput>IvanovaModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

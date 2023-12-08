@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Glazki\Glazki_Ivanova\Ivanoav_Glazki\Ivanoav_Glazki\obj\Debug\
+C:\Glazki_Ivanova\Ivanoav_Glazki\Ivanoav_Glazki\obj\Debug\
 Ivanoav_Glazki
 none
 false
 DEBUG;TRACE
-D:\Glazki\Glazki_Ivanova\Ivanoav_Glazki\Ivanoav_Glazki\App.xaml
-3789554624
-2-213566065
-24-1709038904
-19-1420270379
-MainWindow.xaml;Page1.xaml;ServicePage.xaml;
+C:\Glazki_Ivanova\Ivanoav_Glazki\Ivanoav_Glazki\App.xaml
+7-568945658
+2-744565711
+28-541816033
+19-926311390
+AddEditPage.xaml;AddSalePage.xaml;MainWindow.xaml;Page1.xaml;PRWindow.xaml;SalePage.xaml;ServicePage.xaml;
 
 False
 

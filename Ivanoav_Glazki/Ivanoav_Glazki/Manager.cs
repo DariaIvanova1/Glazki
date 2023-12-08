@@ -11,6 +11,5 @@ namespace Ivanoav_Glazki
     {
         public static Frame MainFrame { get; set; }
 
-         
     }
 }
